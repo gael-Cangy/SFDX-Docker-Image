@@ -10,14 +10,14 @@ Contains docker image that can be used on CDCI pipelines. It contains basic tool
   ```
    - Build image that will be pushed to dockerhub with tag "latest"
    ```bash
-      docker build -t debian-sfdx-image:latest .
+      docker build -t debian-sfdx-docker-image:latest .
    ```
    
 # 2. Send Image to docker hub to be used by CDCI pipelines
-   - Create a repository on docker hub with the following name: debian-sfdx-image
+   - Create a repository on docker hub with the following name: debian-sfdx-docker-image
    - push the image previously created to the right dockerhub repository
    ```bash
-     docker push <hub-user>/debian-sfdx-image:latest 
+     docker push <hub-user>/debian-sfdx-docker-image:latest 
    ```
    
    
